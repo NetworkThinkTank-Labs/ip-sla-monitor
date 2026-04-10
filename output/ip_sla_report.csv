@@ -1,0 +1,13 @@
+sla_id,source_device,destination,type,latest_rtt_ms,avg_latency_ms,jitter_ms,packet_loss_pct,status,netbox_site,netbox_role
+100,core-rtr-01,10.1.1.1,icmp-echo,23,25.4,3.2,0.0,OK,HQ-DC1,core-router
+101,core-rtr-01,10.2.1.1,icmp-echo,48,52.1,8.7,0.5,OK,HQ-DC1,core-router
+200,branch-rtr-01,10.1.1.1,icmp-echo,110,115.3,35.2,2.1,ALERT,Branch-NYC,branch-router
+201,branch-rtr-01,10.3.1.1,udp-jitter,67,72.8,12.4,0.2,OK,Branch-NYC,branch-router
+300,dist-sw-01,10.1.1.1,icmp-echo,5,6.1,1.0,0.0,OK,HQ-DC1,distribution-switch
+  301,dist-sw-01,10.4.1.1,icmp-echo,14,15.9,2.3,0.0,OK,HQ-DC1,distribution-switch
+    400,edge-rtr-01,8.8.8.8,icmp-echo,32,34.7,4.5,0.1,OK,HQ-DC1,edge-router
+    401,edge-rtr-01,1.1.1.1,icmp-echo,28,30.2,3.8,0.0,OK,HQ-DC1,edge-router
+    500,wan-rtr-01,10.1.1.1,udp-jitter,89,95.0,22.1,0.8,OK,Branch-LAX,wan-router
+    501,wan-rtr-01,10.5.1.1,icmp-echo,145,150.6,40.3,3.5,ALERT,Branch-LAX,wan-router
+    600,dc-spine-01,10.1.1.1,icmp-echo,2,2.5,0.5,0.0,OK,HQ-DC1,dc-spine
+    601,dc-spine-01,10.6.1.1,icmp-echo,3,3.8,0.7,0.0,OK,HQ-DC1,dc-spine
