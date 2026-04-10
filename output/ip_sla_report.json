@@ -1,0 +1,103 @@
+{
+    "report_timestamp": "2026-04-10T14:30:00Z",
+    "source": "DNA Center + NetBox",
+    "summary": {
+          "total_operations": 12,
+          "passing": 10,
+          "failing": 2,
+          "avg_latency_ms": 50.37
+    },
+    "operations": [
+          {
+                  "sla_id": 100,
+                  "source_device": "core-rtr-01",
+                  "destination": "10.1.1.1",
+                  "type": "icmp-echo",
+                  "latest_rtt_ms": 23,
+                  "avg_latency_ms": 25.4,
+                  "jitter_ms": 3.2,
+                  "packet_loss_pct": 0.0,
+                  "status": "OK",
+                  "netbox_site": "HQ-DC1",
+                  "netbox_role": "core-router"
+          },
+          {
+                  "sla_id": 101,
+                  "source_device": "core-rtr-01",
+                  "destination": "10.2.1.1",
+                  "type": "icmp-echo",
+                  "latest_rtt_ms": 48,
+                  "avg_latency_ms": 52.1,
+                  "jitter_ms": 8.7,
+                  "packet_loss_pct": 0.5,
+                  "status": "OK",
+                  "netbox_site": "HQ-DC1",
+                  "netbox_role": "core-router"
+          },
+          {
+                  "sla_id": 200,
+                  "source_device": "branch-rtr-01",
+                  "destination": "10.1.1.1",
+                  "type": "icmp-echo",
+                  "latest_rtt_ms": 110,
+                  "avg_latency_ms": 115.3,
+                  "jitter_ms": 35.2,
+                  "packet_loss_pct": 2.1,
+                  "status": "ALERT",
+                  "netbox_site": "Branch-NYC",
+                  "netbox_role": "branch-router"
+          },
+          {
+                  "sla_id": 300,
+                  "source_device": "dist-sw-01",
+                  "destination": "10.1.1.1",
+                  "type": "icmp-echo",
+                  "latest_rtt_ms": 5,
+                  "avg_latency_ms": 6.1,
+                  "jitter_ms": 1.0,
+                  "packet_loss_pct": 0.0,
+                  "status": "OK",
+                  "netbox_site": "HQ-DC1",
+                  "netbox_role": "distribution-switch"
+          },
+          {
+                  "sla_id": 400,
+                  "source_device": "edge-rtr-01",
+                  "destination": "8.8.8.8",
+                  "type": "icmp-echo",
+                  "latest_rtt_ms": 32,
+                  "avg_latency_ms": 34.7,
+                  "jitter_ms": 4.5,
+                  "packet_loss_pct": 0.1,
+                  "status": "OK",
+                  "netbox_site": "HQ-DC1",
+                  "netbox_role": "edge-router"
+          },
+          {
+                  "sla_id": 500,
+                  "source_device": "wan-rtr-01",
+                  "destination": "10.5.1.1",
+                  "type": "icmp-echo",
+                  "latest_rtt_ms": 145,
+                  "avg_latency_ms": 150.6,
+                  "jitter_ms": 40.3,
+                  "packet_loss_pct": 3.5,
+                  "status": "ALERT",
+                  "netbox_site": "Branch-LAX",
+                  "netbox_role": "wan-router"
+          },
+          {
+                  "sla_id": 600,
+                  "source_device": "dc-spine-01",
+                  "destination": "10.1.1.1",
+                  "type": "icmp-echo",
+                  "latest_rtt_ms": 2,
+                  "avg_latency_ms": 2.5,
+                  "jitter_ms": 0.5,
+                  "packet_loss_pct": 0.0,
+                  "status": "OK",
+                  "netbox_site": "HQ-DC1",
+                  "netbox_role": "dc-spine"
+          }
+    ]
+}
